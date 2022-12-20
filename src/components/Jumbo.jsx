@@ -6,7 +6,7 @@ export default function Jumbo() {
   return (
     <>
         <Jumbotron>
-        <h1>Mental Well-being App</h1>
+        <h1>MoodMeter</h1>
          <p>
       This is a simple hero unit, a simple jumbotron-style component for calling
       extra attention to featured content or information.
