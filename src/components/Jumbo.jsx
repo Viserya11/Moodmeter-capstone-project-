@@ -1,5 +1,6 @@
 import React from 'react'
 import { Jumbotron, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 export default function Jumbo() {
   return (
@@ -11,7 +12,8 @@ export default function Jumbo() {
       extra attention to featured content or information.
             </p>
             <p>
-        <Button bsStyle="primary">Learn more</Button>
+                <Link to="/about">
+        <Button bsStyle="primary">Learn more</Button></Link>
             </p>
     
         </Jumbotron>
