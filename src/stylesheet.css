@@ -79,6 +79,19 @@ button.submitbtn {
     margin-top: 0;
 }
 
+.resultscontainer {
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+    text-align: justify;
+}
+
+.results {
+    max-width: 200px;
+}
+
 @media screen and (max-width: 420px) {
     .jumbotron {
         max-width: 420px;
