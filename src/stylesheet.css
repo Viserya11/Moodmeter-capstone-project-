@@ -100,7 +100,7 @@ button.submitbtn {
     justify-content: center;
   }
 
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 780px) {
 
     .results {
         max-width: 300px;
@@ -109,8 +109,17 @@ button.submitbtn {
    
   }
 
+  @media screen and (max-width: 760px) {
 
-@media screen and (max-width: 420px) {
+    .results {
+        max-width: 200px;
+        margin-bottom: 2em;
+    }
+   
+  }
+
+
+@media screen and (max-width: 440px) {
     .jumbotron {
         max-width: 420px;
         height: 5vh;
@@ -133,8 +142,12 @@ button.submitbtn {
         flex-direction: column;
       }
 
-    .navbar {
-        max-width: 420px;
+    div.container {
+        max-width: 380px;
+    }
+
+    .navbar-light .navbar-text {
+        display: none;
     }
   }
 
