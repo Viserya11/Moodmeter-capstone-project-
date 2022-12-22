@@ -89,7 +89,7 @@ button.submitbtn {
 }
 
 .results {
-    max-width: 200px;
+    max-width: 300px;
 }
 
 @media screen and (max-width: 420px) {
@@ -106,4 +106,10 @@ button.submitbtn {
     .navbar {
         max-width: 420px;
     }
+  }
+
+  .resultflex {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
   }

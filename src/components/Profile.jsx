@@ -2,13 +2,15 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Doughnut } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
-Chart.register(ArcElement);
+import { Bar } from 'react-chartjs-2';
+import { registerables } from 'chart.js';
+Chart.register(ArcElement, ...registerables);
 
 
 export default function Profile() {
 
   const data = {
-    labels: ['Red', 'Green', 'Yellow'],
+    labels: ['Emotion1', 'Emotion2', 'Emotion3'],
     datasets: [{
       data: [300, 50, 100],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
@@ -17,7 +19,7 @@ export default function Profile() {
   };
 
   const data2 = {
-    labels: ['Red', 'Green', 'Yellow'],
+    labels: ['Emotion1', 'Emotion2', 'Emotion3'],
     datasets: [{
       data: [300, 50, 100],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
@@ -43,11 +45,18 @@ export default function Profile() {
             laudantium quia, debitis est, fugit, praesentium sunt et commodi!
           </p>
           
-      <h2>Circle Diagram</h2>
+          <div className="resultflex">
+    
       <div className="results">
       <Doughnut data={data} /> 
     </div>
 
+
+        <div className="results">
+          <Bar data={data2} />
+        </div>
+ 
+        </div>
         </div>
       </Container>
     </>
