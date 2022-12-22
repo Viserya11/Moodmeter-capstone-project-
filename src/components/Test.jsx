@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export default function Test() {
   return (
@@ -53,7 +54,7 @@ export default function Test() {
         
     </Container>
     
-    <Button className='submitbtn'>Submit</Button>
+    <Link to="/profile"><Button className='submitbtn'>Submit</Button></Link>
     
     </>
   )
