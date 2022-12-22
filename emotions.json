@@ -1,0 +1,44 @@
+{
+  "emotions": [
+    {
+      "name": "sadness",
+      "examples": [
+        "I cry easier and more often than others.",
+        "I often feel blue.",
+        "I usually need a lot of outside help to get motivated."
+      ]
+    },
+    {
+      "name": "anger",
+      "examples": [
+        "I tend to raise my voice or even yell at others when things aren't going my way",
+        "It's not unusual that I become upset over small things.",
+        "Some people would describe me as a ticking time-bomb when it comes to patience."
+      ]
+    },
+    {
+      "name": "joy",
+      "examples": [
+        "I smile often.",
+        "I am excited about the little things in life.",
+        "People say I radiate joy."
+      ]
+    },
+    {
+      "name": "fear",
+      "examples": [
+        "I am often anxious when I face new challenges.",
+        "I feel uneasy a lot without a concrete reason. ",
+        "I'm scared that I'll never be able to achieve my dreams."
+      ]
+    },
+    {
+      "name": "happiness",
+      "examples": [
+        "I'm so happy that I feel like I'm on top of the world.",
+        "I am mostly satisfied with how things are and I don't want to change them.",
+        "People say I radiate joy."
+      ]
+    }
+  ]
+}
