@@ -1,9 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Doughnut } from 'react-chartjs-2';
-import { Bar } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
-Chart.register(ArcElement, Bar);
+Chart.register(ArcElement);
 
 
 export default function Profile() {
@@ -46,7 +45,7 @@ export default function Profile() {
           
       <h2>Circle Diagram</h2>
       <div className="results">
-      <Doughnut data={data} />  <Bar data={data2} />
+      <Doughnut data={data} /> 
     </div>
 
         </div>
