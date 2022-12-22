@@ -93,6 +93,23 @@ button.submitbtn {
     margin-bottom: 2em;
 }
 
+
+.resultflex {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 770px) {
+
+    .results {
+        max-width: 300px;
+        margin-bottom: 2em;
+    }
+   
+  }
+
+
 @media screen and (max-width: 420px) {
     .jumbotron {
         max-width: 420px;
@@ -104,13 +121,22 @@ button.submitbtn {
         max-height: 63vh;
     }
 
+    .results {
+        max-width: 300px;
+        margin-bottom: 2em;
+    }
+
+    .resultflex {
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
     .navbar {
         max-width: 420px;
     }
   }
 
-  .resultflex {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
-  }
+ 
+
