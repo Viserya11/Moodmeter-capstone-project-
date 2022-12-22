@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 
 export default function Test() {
   return (
@@ -48,9 +48,13 @@ export default function Test() {
       <span class="checkmark"></span>
      </label>
         </div>
+
        
         
     </Container>
+    
+    <Button className='submitbtn'>Submit</Button>
+    
     </>
   )
 }

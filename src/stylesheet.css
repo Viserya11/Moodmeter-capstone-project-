@@ -55,6 +55,7 @@ ul {
     list-style-type:none;
 }
 
+
 .testcontainer {
     background-color: aliceblue;
     border-radius: 25px;
@@ -71,6 +72,11 @@ p {
 
 h2 {
     color: rgb(255, 255, 255);
+}
+
+button.submitbtn {
+    width: 7em;
+    margin-top: 0;
 }
 
 @media screen and (max-width: 420px) {
