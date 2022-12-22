@@ -3,6 +3,9 @@ import Jumbo from './Jumbo'
 
 export default function HomePage() {
   return (
+    <>
     <Jumbo/>
+    <footer/>
+    </>
   )
 }

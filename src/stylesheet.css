@@ -1,3 +1,75 @@
 .jumbotron {
-    color: black;
+    color: rgb(226, 226, 226);
+    height: 19.5vh;
+    background-color: transparent;
 }
+
+footer {
+    height: 70vh;
+    background-image: url("./assets/waves.svg");
+}
+
+body {
+    background-color: #001220   ;
+}
+
+.navbar-light .navbar-brand {
+    color: aliceblue;
+}
+
+.navbar-light .navbar-text{
+    color: aliceblue;
+}
+
+.navbar-light .navbar-text a {
+    color: rgb(218, 180, 40);
+}
+
+button.btn {
+    background-color: rgb(218, 180, 40);
+    border: none;
+    border-radius: 25px;
+    margin-top: 1em;
+}
+
+button.btn:hover {
+    background-color: rgb(185, 153, 35);
+}
+
+
+button.btn:focus {
+    background-color: rgb(185, 153, 35);
+    border: none;
+    border-radius: 25px;
+}
+
+a.nav-link {
+    color: #642a9d
+}
+
+a.nav-link:hover {
+    color: #8748c6;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.testcontainer {
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+.d-flex {
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
