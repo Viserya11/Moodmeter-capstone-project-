@@ -9,13 +9,13 @@ export default function Test() {
     
         <p>Question about something something</p>
         <div className="container d-flex">
-        <label>One
+        <label>Agree
          
       <input className='checkmark' type="checkbox" checked="checked"/>
         <span class="checkmark"></span>
       </label>
 
-      <label>Two
+      <label>Disagree
       <input className='checkmark' type="checkbox"/>
       <span class="checkmark"></span>
      </label>
@@ -23,13 +23,13 @@ export default function Test() {
 
         <p>Question about something something</p>
         <div className="container d-flex">
-        <label>One
+        <label>Agree
          
       <input className='checkmark' type="checkbox" checked="checked"/>
         <span class="checkmark"></span>
       </label>
 
-      <label>Two
+      <label>Disagree
       <input className='checkmark' type="checkbox"/>
       <span class="checkmark"></span>
      </label>
@@ -37,13 +37,13 @@ export default function Test() {
 
         <p>Question about something something</p>
         <div className="container d-flex">
-        <label>One
+        <label>Agree
          
       <input className='checkmark' type="checkbox" checked="checked"/>
         <span class="checkmark"></span>
       </label>
 
-      <label>Two
+      <label>Disagree
       <input className='checkmark' type="checkbox"/>
       <span class="checkmark"></span>
      </label>
