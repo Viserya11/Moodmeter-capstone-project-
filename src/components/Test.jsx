@@ -5,6 +5,12 @@ import { Link } from "react-router-dom";
 export default function Test() {
   const [emotions, setEmotions] = useState([]);
   const [answers, setAnswers] = useState({});
+  const [prevValues, setPrevValues] = useState({});
+  const [countOne, setCountOne] = useState(0);
+  const [countTwo, setCountTwo] = useState(0);
+  const [countThree, setCountThree] = useState(0);
+  const [countFour, setCountFour] = useState(0);
+  const [countFive, setCountFive] = useState(0);
 
   useEffect(() => {
     getQuestions();
@@ -24,7 +30,7 @@ export default function Test() {
     }
   }
 
-  const handleChange = (event, emotion, example) => {
+  const handleChange = (event, emotion, example, index) => {
     setAnswers({
       ...answers,
       [emotion]: {
@@ -32,13 +38,34 @@ export default function Test() {
         [example]: event.target.value,
       },
     });
+    setPrevValues({
+      ...prevValues,
+      [emotion]: {
+        ...prevValues[emotion],
+        [example]: answers[emotion][example],
+      },
+    });
+    if (event.target.value === "agree" && prevValues[emotion][example] !== "agree") {
+      if (index % 5 === 0) {
+        setCountOne((prevCount) => prevCount + 1);
+      } else if (index % 5 === 1) {
+        setCountTwo((prevCount) => prevCount + 1);
+      } else if (index % 5 === 2) {
+        setCountThree((prevCount) => prevCount + 1);
+      } else if (index % 5 === 3) {
+        setCountFour((prevCount) => prevCount + 1);
+      } else {
+        setCountFive((prevCount) => prevCount + 1);
+      }
+    }
   };
+  ;
 
   return (
     <>
       <h2>Take test</h2>
       <Container className="testcontainer">
-        {emotions.map((emotion) => (
+        {emotions.map((emotion, index) => (
           <div key={emotion.name}>
             <ul>
               {emotion.examples.map((example) => (
@@ -48,7 +75,7 @@ export default function Test() {
                   <div className="container d-flex">
                     <label>
                       <span className="labelspan">
-                      Agree
+                        Agree
                       </span>
                       <input
                         type="radio"
@@ -58,9 +85,11 @@ export default function Test() {
                           answers[emotion][example] === "agree"
                         }
                         onChange={(event) =>
-                          handleChange(event, emotion, example)
+                          handleChange(event, emotion, example, index)
                         }
+                        
                       />
+                     { console.log(countOne, countTwo, countThree, countFour, countFive)}
                     </label>
                     <label>
                       <span className="labelspan">
