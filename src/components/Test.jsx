@@ -45,6 +45,7 @@ export default function Test() {
         [example]: answers[emotion][example],
       },
     });
+    console.log(prevValues[emotion][example])
     if (event.target.value === "agree" && prevValues[emotion][example] !== "agree") {
       if (index % 5 === 0) {
         setCountOne((prevCount) => prevCount + 1);
