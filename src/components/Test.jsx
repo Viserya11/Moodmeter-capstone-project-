@@ -47,7 +47,9 @@ export default function Test() {
 
                   <div className="container d-flex">
                     <label>
+                      <span className="labelspan">
                       Agree
+                      </span>
                       <input
                         type="radio"
                         value="agree"
@@ -61,7 +63,9 @@ export default function Test() {
                       />
                     </label>
                     <label>
+                      <span className="labelspan">
                       Disagree
+                      </span>
                       <input
                         type="radio"
                         value="disagree"

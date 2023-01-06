@@ -8,10 +8,18 @@ import NotFound from './components/NotFound';
 import Profile from './components/Profile';
 import About from './components/About';
 import "./stylesheet.css"
+import { useSelector } from 'react-redux';
+
+
 
 function App() {
+
+
+
   return (
     <div className="App">
+
+
       <Navigation/>
 
      <BrowserRouter>

@@ -66,6 +66,7 @@ ul {
 .d-flex {
     justify-content: center;
     margin-bottom: 1em;
+    gap: 0.5em;
 }
 
 p {
@@ -111,6 +112,10 @@ button.submitbtn {
    
   }
 
+  .labelspan {
+    margin: 5px;
+  }
+
   @media screen and (max-width: 760px) {
 
     .results {
@@ -119,6 +124,7 @@ button.submitbtn {
     }
    
   }
+
 
 
 @media screen and (max-width: 440px) {
