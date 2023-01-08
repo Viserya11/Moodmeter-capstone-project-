@@ -1,36 +1,62 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from 'react-redux';
 import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { getQuestions } from '../redux/actions/index'
+import { useDispatch } from 'react-redux';
 
 export default function Test() {
-  const [emotions, setEmotions] = useState([]);
-  const [answers, setAnswers] = useState({});
-  const [prevValues, setPrevValues] = useState({});
+
+  const initialAnswers = {
+    emotion1: {
+      example1: "disagree",
+      example2: "disagree",
+      example3: "disagree",
+    },
+    emotion2: {
+      example1: "disagree",
+      example2: "disagree",
+      example3: "disagree",
+    },
+    emotion3: {
+      example1: "disagree",
+      example2: "disagree",
+      example3: "disagree",
+    },
+    emotion4: {
+      example1: "disagree",
+      example2: "disagree",
+      example3: "disagree",
+    },
+    emotion5: {
+      example1: "disagree",
+      example2: "disagree",
+      example3: "disagree",
+    }
+};
+
+const emotions = useSelector(state => state.questions.emotions);
+const isLoading = useSelector(state => state.isLoading);
   const [countOne, setCountOne] = useState(0);
   const [countTwo, setCountTwo] = useState(0);
   const [countThree, setCountThree] = useState(0);
   const [countFour, setCountFour] = useState(0);
   const [countFive, setCountFive] = useState(0);
+  const dispatch = useDispatch();
+  const [prevValues, setPrevValues] = useState({});
+  const [answers, setAnswers] = useState(initialAnswers);
+  
+useEffect(() => {
+  setPrevValues(answers);
+}, [answers]);  
 
   useEffect(() => {
-    getQuestions();
+    dispatch(getQuestions());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  async function getQuestions() {
-    try {
-      const response = await fetch(
-        "https://raw.githubusercontent.com/Viserya11/capstone-project/master/emotions.json"
-      );
-      if (response.ok) {
-        let emotions = await response.json();
-        setEmotions(emotions.emotions);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   const handleChange = (event, emotion, example, index) => {
+    const prevAnswer = 0;
     setAnswers({
       ...answers,
       [emotion]: {
@@ -42,25 +68,30 @@ export default function Test() {
       ...prevValues,
       [emotion]: {
         ...prevValues[emotion],
-        [example]: answers[emotion][example],
+        [example]: prevAnswer,
       },
     });
-    console.log(prevValues[emotion][example])
+    console.log(prevValues[emotion][example], "previous answer is", prevAnswer)
     if (event.target.value === "agree" && prevValues[emotion][example] !== "agree") {
-      if (index % 5 === 0) {
-        setCountOne((prevCount) => prevCount + 1);
-      } else if (index % 5 === 1) {
-        setCountTwo((prevCount) => prevCount + 1);
-      } else if (index % 5 === 2) {
-        setCountThree((prevCount) => prevCount + 1);
-      } else if (index % 5 === 3) {
-        setCountFour((prevCount) => prevCount + 1);
-      } else {
-        setCountFive((prevCount) => prevCount + 1);
-      }
+      handleAgree(index);
     }
   };
-  ;
+  
+  const handleAgree = (index) => {
+    if (index % 5 === 0) {
+      setCountOne((prevCount) => prevCount + 1);
+    } else if (index % 5 === 1) {
+      setCountTwo((prevCount) => prevCount + 1);
+    } else if (index % 5 === 2) {
+      setCountThree((prevCount) => prevCount + 1);
+    } else if (index % 5 === 3) {
+      setCountFour((prevCount) => prevCount + 1);
+    } else {
+      setCountFive((prevCount) => prevCount + 1);
+    }
+  };
+  
+  
 
   return (
     <>

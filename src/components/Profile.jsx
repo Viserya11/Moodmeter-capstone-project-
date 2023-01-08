@@ -10,11 +10,11 @@ Chart.register(ArcElement, ...registerables);
 export default function Profile() {
 
   const data = {
-    labels: ['Emotion1', 'Emotion2', 'Emotion3'],
+    labels: ['Emotion1', 'Emotion2', 'Emotion3', 'Emotion4', 'Emotion5', 'Emotion5'],
     datasets: [{
-      data: [300, 50, 100],
-      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
+      data: [300, 50, 100, 50, 60],
+      backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#be03fc', '#360f2a'],
+      hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#be03fc', '#360f2a']
     }]
   };
 
