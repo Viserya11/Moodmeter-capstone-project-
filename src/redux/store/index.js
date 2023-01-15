@@ -1,13 +1,22 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { combineReducers } from 'redux';
-import questionsReducer from '../reducers/questionsReducer';
+import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers } from "redux";
+import questionsReducer from "../reducers/questionsReducer";
+import { persistReducer, persistStore } from "redux-persist";
+import storage from "redux-persist/lib/storage";
+
+const persistConfig = {
+  key: "root",
+  storage: storage,
+};
 
 const bigReducer = combineReducers({
-    questions: questionsReducer,
-  });
+  questions: questionsReducer,
+});
 
-  const store = configureStore({
-    reducer: bigReducer,
-  });
+const persistedReducer = persistReducer(persistConfig, bigReducer);
 
-  export default store;
+export const store = configureStore({
+  reducer: persistedReducer,
+});
+
+export const persistor = persistStore(store);

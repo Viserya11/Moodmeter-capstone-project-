@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 import { Button, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { getQuestions } from '../redux/actions/index'
-import { useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom";
+import { getQuestions } from "../redux/actions/index";
+import { useDispatch } from "react-redux";
+import { submitResults } from "../redux/actions/index";
 
 export default function Test() {
-
+  const navigate = useNavigate();
   const initialAnswers = {
     emotion1: {
       example1: "disagree",
@@ -32,11 +33,11 @@ export default function Test() {
       example1: "disagree",
       example2: "disagree",
       example3: "disagree",
-    }
-};
+    },
+  };
 
-const emotions = useSelector(state => state.questions.emotions);
-const isLoading = useSelector(state => state.isLoading);
+  const emotions = useSelector((state) => state.questions.emotions);
+  const isLoading = useSelector((state) => state.isLoading);
   const [countOne, setCountOne] = useState(0);
   const [countTwo, setCountTwo] = useState(0);
   const [countThree, setCountThree] = useState(0);
@@ -45,10 +46,10 @@ const isLoading = useSelector(state => state.isLoading);
   const dispatch = useDispatch();
   const [prevValues, setPrevValues] = useState({});
   const [answers, setAnswers] = useState(initialAnswers);
-  
-useEffect(() => {
-  setPrevValues(answers);
-}, [answers]);  
+
+  useEffect(() => {
+    setPrevValues(answers);
+  }, [answers]);
 
   useEffect(() => {
     dispatch(getQuestions());
@@ -71,12 +72,15 @@ useEffect(() => {
         [example]: prevAnswer,
       },
     });
-    console.log(prevValues[emotion][example], "previous answer is", prevAnswer)
-    if (event.target.value === "agree" && prevValues[emotion][example] !== "agree") {
+    console.log(prevValues[emotion][example], "previous answer is", prevAnswer);
+    if (
+      event.target.value === "agree" &&
+      prevValues[emotion][example] !== "agree"
+    ) {
       handleAgree(index);
     }
   };
-  
+
   const handleAgree = (index) => {
     if (index % 5 === 0) {
       setCountOne((prevCount) => prevCount + 1);
@@ -90,8 +94,12 @@ useEffect(() => {
       setCountFive((prevCount) => prevCount + 1);
     }
   };
-  
-  
+
+  function submitHandle() {
+    let submitObject = { countOne, countTwo, countThree, countFour, countFive };
+    dispatch(submitResults(submitObject));
+    navigate("/profile");
+  }
 
   return (
     <>
@@ -106,9 +114,7 @@ useEffect(() => {
 
                   <div className="container d-flex">
                     <label>
-                      <span className="labelspan">
-                        Agree
-                      </span>
+                      <span className="labelspan">Agree</span>
                       <input
                         type="radio"
                         value="agree"
@@ -119,14 +125,17 @@ useEffect(() => {
                         onChange={(event) =>
                           handleChange(event, emotion, example, index)
                         }
-                        
                       />
-                     { console.log(countOne, countTwo, countThree, countFour, countFive)}
+                      {console.log(
+                        countOne,
+                        countTwo,
+                        countThree,
+                        countFour,
+                        countFive
+                      )}
                     </label>
                     <label>
-                      <span className="labelspan">
-                      Disagree
-                      </span>
+                      <span className="labelspan">Disagree</span>
                       <input
                         type="radio"
                         value="disagree"
@@ -147,9 +156,9 @@ useEffect(() => {
         ))}
       </Container>
 
-      <Link to="/profile">
-        <Button className="submitbtn">Submit</Button>
-      </Link>
+      <Button className="submitbtn" onClick={() => submitHandle()}>
+        Submit
+      </Button>
     </>
   );
 }

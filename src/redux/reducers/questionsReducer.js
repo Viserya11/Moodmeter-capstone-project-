@@ -1,19 +1,22 @@
-import { FETCH_QUESTIONS } from '../actions/index';
+import { FETCH_QUESTIONS, SUBMIT_RESULTS } from "../actions/index";
 
 const initialState = {
   emotions: [],
-  isLoading: true
+  emotionsScore: {},
+  isLoading: true,
 };
 
 const questionsReducer = (state = initialState, action) => {
-  console.log(state)
+  console.log(state);
   switch (action.type) {
+    case SUBMIT_RESULTS:
+      return { ...state, emotionsScore: action.payload };
     case FETCH_QUESTIONS:
       const newState = {
         ...state,
         emotions: action.payload,
-        isLoading: false
-      }
+        isLoading: false,
+      };
       console.log(newState);
       return newState;
     default:
