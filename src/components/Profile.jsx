@@ -12,7 +12,7 @@ export default function Profile() {
   const data = {
     labels: ['Emotion1', 'Emotion2', 'Emotion3', 'Emotion4', 'Emotion5'],
     datasets: [{
-      data: [300, 50, 100, 50, 60],
+      data: [2, 2, 2, 2, 2],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#be03fc', '#360f2a'],
       hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#be03fc', '#360f2a']
     }]
