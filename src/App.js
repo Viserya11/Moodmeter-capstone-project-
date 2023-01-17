@@ -9,6 +9,7 @@ import Profile from './components/Profile';
 import About from './components/About';
 import "./stylesheet.css"
 import { useSelector } from 'react-redux';
+import Login from './components/Login';
 
 
 
@@ -25,11 +26,11 @@ function App() {
      <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/home" element={<HomePage />} />
             <Route path="/test" element={<Test />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="login" element={<Login />} />
           </Routes>
         </BrowserRouter>
         
