@@ -154,10 +154,12 @@ export default function Profile() {
 
               <div className="resultflex">
                 <div className="results">
+                  <h5>Your feelings</h5>
                   <Doughnut data={data} />
                 </div>
 
                 <div className="results">
+                  <h5>Big 5 analysis</h5>
                   <Bar data={data2} />
                 </div>
               </div>

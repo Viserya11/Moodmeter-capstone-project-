@@ -1,16 +1,22 @@
 .jumbotron {
-    color: rgb(226, 226, 226);
+    color: rgb(27, 21, 33);
     height: 19.5vh;
-    background-color: transparent;
+    background-color:rgba(226, 226, 226, 0.9);
+    width: 70%;
+    margin: 1em auto;
+    padding: 0rem;
 }
 
+
 footer {
+    opacity: 0.25;
     height: 70vh;
     background-image: url("./assets/waves.svg");
 }
 
 body {
-    background-color: #001220   ;
+    background: rgb(52,7,80);
+    background: linear-gradient(90deg, rgba(52,7,80,1) 0%, rgba(57,14,81,1) 50%, rgba(17,132,101,1) 100%);
 }
 
 .navbar-light .navbar-brand {
@@ -56,9 +62,13 @@ ul {
     list-style-type:none;
 }
 
+h1 {
+    margin-top: 0;
+}
+
 
 .testcontainer {
-    background-color: aliceblue;
+    background-color:rgba(226, 226, 226, 0.9);
     border-radius: 25px;
     padding-top: 1em;
 }
@@ -83,7 +93,7 @@ button.submitbtn {
 }
 
 .resultscontainer {
-    background-color: aliceblue;
+    background-color:rgba(226, 226, 226, 0.9);
     border-radius: 25px;
     padding-left: 4em;
     padding-right: 4em;
@@ -101,6 +111,13 @@ button.submitbtn {
     margin-top: 1em;
     display: flex;
     justify-content: center;
+  }
+
+  .jumboflex {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: 780px) {
