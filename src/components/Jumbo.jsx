@@ -6,12 +6,12 @@ export default function Jumbo() {
   return (
     <>
         <Jumbotron>
-        <h1>MoodMeter</h1>
+        <h1>MoodMeter</h1>  
         <div className='jumboflex'>
          <p >
       An application to monitor your current mood and get your Big 5 test results the same time.
             </p>
-            <p>place of img</p>
+            <p><img src="src/psychiatry.png" alt="logo" /></p>
             </div>
             <p>
                 <Link to="/about">

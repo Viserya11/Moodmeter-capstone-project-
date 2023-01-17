@@ -96,25 +96,31 @@ export default function Profile() {
           emotionsData.countFive,
         ],
         backgroundColor: [
-          "#FF6384",
           "#36A2EB",
+          "#FF6384",
           "#FFCE56",
           "#be03fc",
-          "#360f2a",
+          "#137e64",
         ],
         hoverBackgroundColor: [
-          "#FF6384",
           "#36A2EB",
+          "#FF6384",
           "#FFCE56",
           "#be03fc",
-          "#360f2a",
+          "#137e64",
         ],
       },
     ],
   };
 
   const data2 = {
-    labels: ["Agreeableness", "Conscientiousness", "Extraversion", "Neuroticism", "Openness"],
+    labels: [
+      "Agreeableness",
+      "Conscientiousness",
+      "Extraversion",
+      "Neuroticism",
+      "Openness",
+    ],
     datasets: [
       {
         data: [
@@ -127,16 +133,16 @@ export default function Profile() {
         backgroundColor: [
           "#FF6384",
           "#36A2EB",
-          "#FFCE56",
+          "#137e64",
+          "#43567A",
           "#F1CE56",
-          "#1FCE56",
         ],
         hoverBackgroundColor: [
           "#FF6384",
           "#36A2EB",
           "#FFCE56",
+          "##43567A",
           "#F1CE56",
-          "#1FCE56",
         ],
       },
     ],
@@ -150,7 +156,12 @@ export default function Profile() {
           <h2>Profile</h2>
           <Container className="resultscontainer">
             <div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum accusantium, consequuntur iusto esse nulla quis commodi magni possimus similique unde molestiae odit nisi minima tenetur et quos, fuga non magnam.</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                accusantium, consequuntur iusto esse nulla quis commodi magni
+                possimus similique unde molestiae odit nisi minima tenetur et
+                quos, fuga non magnam.
+              </p>
 
               <div className="resultflex">
                 <div className="results">
