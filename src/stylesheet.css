@@ -101,6 +101,7 @@ h1 {
 }
 
 .d-flex {
+    display: flex;
     justify-content: center;
     margin-bottom: 1em;
     gap: 0.5em;
@@ -173,6 +174,10 @@ button.submitbtn {
     text-align: center;
   }
 
+  .emotions {
+    width: 30%;
+  }
+
   @media screen and (max-width: 780px) {
 
     .results {
@@ -184,6 +189,10 @@ button.submitbtn {
 
   .labelspan {
     margin: 5px;
+  }
+
+  .emotions {
+    max-width: 50%;
   }
 
   @media screen and (max-width: 780px) {
@@ -220,12 +229,21 @@ button.submitbtn {
    }
   }
 
+  .emotions {
+    max-width: 50%;
+  }
+
+
 
 @media screen and (max-width: 480px) {
     .jumbotron {
         max-width: 400px;
         height: 10vh;
     }
+
+    .d-flex {
+        flex-direction: column;
+      }
 
     footer {
        display: none;
@@ -266,6 +284,10 @@ button.submitbtn {
     .navbar-light .navbar-text {
         display: none;
     }
+  }
+
+  .emotions {
+    max-width: 50%;
   }
 
  

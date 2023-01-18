@@ -36,7 +36,7 @@ export default function About() {
           <span>
             
             <img
-              className="bigfive"
+              className="emotions"
               src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/emotion.png"
               alt=""
             />
