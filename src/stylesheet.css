@@ -10,7 +10,11 @@
 
 
 footer {
+    position: absolute;
+    top: 15.8em;
     opacity: 0.25;
+    width: 100%;
+    z-index: -1;
     height: 70vh;
     background-image: url("./assets/waves.svg");
 }
@@ -19,6 +23,7 @@ body {
     background: rgb(52,7,80);
     background: linear-gradient(90deg, rgba(52,7,80,1) 0%, rgba(57,14,81,1) 50%, rgba(17,132,101,1) 100%);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
 }
 
 .navbar-light .navbar-brand {
@@ -34,6 +39,7 @@ body {
 }
 
 button.btn {
+ 
     background-color: rgb(218, 180, 40);
     border: none;
     border-radius: 25px;
@@ -66,6 +72,7 @@ ul {
 
 h1 {
     margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 
@@ -120,6 +127,28 @@ button.submitbtn {
     width: 60%;
     justify-content: space-between;
     margin: 0 auto;
+  }
+
+  .logo {
+    height: 70%;
+  }
+
+  .justify {
+    text-align: justify;
+  }
+
+  .learnmore {
+    z-index: 99999;
+  }
+
+  .btndiv {
+    transform: translateY(20em);
+    overflow: hidden;
+    z-index: 99999;
+  }
+
+  h5 {
+    text-align: center;
   }
 
   @media screen and (max-width: 780px) {

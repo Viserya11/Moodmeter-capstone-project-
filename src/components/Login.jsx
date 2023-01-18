@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { saveUserAction } from "../redux/actions";
 
 export default function Login() {
+  
   const handleSubmit = (username, password) => {
     console.log(username, password);
   };
@@ -12,6 +16,7 @@ export default function Login() {
 }
 
 function RegistrationForm({ onSubmit }) {
+  const dispatch = useDispatch()
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [isEnable, setEnable] = useState(true);
@@ -21,7 +26,7 @@ function RegistrationForm({ onSubmit }) {
   };
   return (
     <div>
-      <label>User Name</label>
+      <label>Username</label>
       <input
         type="text"
         id="username-input"
@@ -43,14 +48,16 @@ function RegistrationForm({ onSubmit }) {
       />
       <br />
       <br />
+      <Link to="/">
       <button
         type="submit"
         id="button-input"
         disabled={isEnable}
-        onClick={() => onSubmit(username, password)}
+        onClick={() => dispatch(saveUserAction(username))}
       >
         Login
       </button>
+      </Link>
     </div>
   );
 }

@@ -21,9 +21,10 @@ function App() {
     <div className="App">
 
 
-      <Navigation/>
+    
 
      <BrowserRouter>
+     <Navigation/>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/test" element={<Test />} />

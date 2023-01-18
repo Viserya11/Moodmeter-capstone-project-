@@ -3,20 +3,24 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Navigation() {
+  const location = useLocation();
+  const user = useSelector((state => state.login.user))
   return (
-    <Navbar>
+    <Navbar className={location.pathname === "/login" ? "d-none":""}>
       <Container>
-      <Navbar.Brand>MoodMeter</Navbar.Brand>
+      <Navbar.Brand><Link to="/">MoodMeter</Link></Navbar.Brand>
         <Navbar.Toggle />
-        <Nav.Link>Take test</Nav.Link>
-        <Nav.Link>Profile</Nav.Link>
-        <Nav.Link>About</Nav.Link>
+        <Nav.Link><Link to="/test">Take test</Link></Nav.Link>
+        <Nav.Link><Link to="/profile">Profile</Link></Nav.Link>
+        <Nav.Link><Link to="/about">About</Link></Nav.Link>
         <Navbar.Collapse className="justify-content-end">
           
           <Navbar.Text>
-            Signed in as: <a href="#login">Mary Sue/John Doe</a>
+            Signed in as: <Link to="/profile">{user}</Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
