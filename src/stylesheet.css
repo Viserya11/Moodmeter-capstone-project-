@@ -178,6 +178,18 @@ button.submitbtn {
     width: 30%;
   }
 
+  .logincontainer {
+    background-color:rgba(226, 226, 226, 0.9);
+    margin: 18em auto;
+    width: 30%;
+    border-radius: 25px;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 2em;
+    text-align: center;
+
+  }
+
   @media screen and (max-width: 780px) {
 
     .results {

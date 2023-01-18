@@ -25,7 +25,7 @@ function RegistrationForm({ onSubmit }) {
     else setEnable(true);
   };
   return (
-    <div>
+    <div className="logincontainer">
       <label>Username</label>
       <input
         type="text"
