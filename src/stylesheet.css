@@ -97,12 +97,17 @@ h1 {
     border-radius: 25px;
     padding-top: 1em;
     width: 80%;
+    padding: 2em;
 }
 
 .d-flex {
     justify-content: center;
     margin-bottom: 1em;
     gap: 0.5em;
+}
+
+.bigfive {
+    max-width: 50%;
 }
 
 p {
