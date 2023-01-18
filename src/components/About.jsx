@@ -24,6 +24,24 @@ export default function About() {
             incidunt! Quidem, eligendi!
           </span>
         </div>
+        <div className="d-flex">
+          
+          <span className="justify">
+          <h5>Emotion track</h5>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+            distinctio optio cumque rerum praesentium voluptas. Ullam hic sequi,
+            cum assumenda tempore numquam tenetur ab, nisi commodi dolorem
+            incidunt! Quidem, eligendi!
+          </span>
+          <span>
+            
+            <img
+              className="bigfive"
+              src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/emotions.png"
+              alt=""
+            />
+          </span>
+        </div>
       </div>
       <Link to="/test">
         <Button>Take test</Button>
