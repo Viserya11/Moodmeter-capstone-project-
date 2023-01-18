@@ -14,9 +14,9 @@ function Navigation() {
       <Container>
       <Navbar.Brand><Link to="/">MoodMeter</Link></Navbar.Brand>
         <Navbar.Toggle />
+        <Nav.Link><Link to="/about">About</Link></Nav.Link>
         <Nav.Link><Link to="/test">Take test</Link></Nav.Link>
         <Nav.Link><Link to="/profile">Profile</Link></Nav.Link>
-        <Nav.Link><Link to="/about">About</Link></Nav.Link>
         <Navbar.Collapse className="justify-content-end">
           
           <Navbar.Text>
