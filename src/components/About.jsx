@@ -37,7 +37,7 @@ export default function About() {
             
             <img
               className="bigfive"
-              src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/emotions.png"
+              src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/emotion.png"
               alt=""
             />
           </span>
