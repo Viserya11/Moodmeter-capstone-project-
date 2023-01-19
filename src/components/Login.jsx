@@ -25,7 +25,11 @@ function RegistrationForm({ onSubmit }) {
     else setEnable(true);
   };
   return (
+
+    <>
+   
     <div className="logincontainer">
+    <h3>Log in</h3>
       <label>Username</label>
       <input
         type="text"
@@ -59,5 +63,6 @@ function RegistrationForm({ onSubmit }) {
       </button>
       </Link>
     </div>
+    </>
   );
 }

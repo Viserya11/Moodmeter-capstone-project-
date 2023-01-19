@@ -157,10 +157,7 @@ export default function Profile() {
           <Container className="resultscontainer">
             <div>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                accusantium, consequuntur iusto esse nulla quis commodi magni
-                possimus similique unde molestiae odit nisi minima tenetur et
-                quos, fuga non magnam.
+               Congratulations! You are one step closer to understand yourself and your feelings. Below you can see your test results, showing your most dominant emotion and your Big Five Personality results. Note that the results can depend on which way you took it: based on your current mindset and feelings or you gave a general overwiew of yourself.
               </p>
 
               <div className="resultflex">

@@ -3,11 +3,14 @@
     height: 19.5vh;
     background-color:transparent;
     width: 70%;
-    margin: 1em auto;
+    margin: 5em auto;
     padding: 0rem;
     border-radius: 25px;
 }
 
+.jumbotext {
+    padding-top: 3em;
+}
 
 footer {
     position: absolute;
@@ -39,7 +42,7 @@ body {
 }
 
 button.btn {
- 
+    position: relative;
     background-color: rgb(218, 180, 40);
     border: none;
     border-radius: 25px;
@@ -59,20 +62,40 @@ button.btn:focus {
 }
 
 a.nav-link {
-    color: #642a9d
+    color: #c79d42
 }
 
 a.nav-link:hover {
-    color: #8748c6;
+    color: #b3892e;
 }
 
 a {
-    color: #642a9d;
+    color: rgb(251, 244, 227);
     transition: ease 0.5s;
 }
 
 a:hover {
-    color: rgb(200, 200, 200);
+    color: rgb(185, 153, 35);
+}
+
+#username-input {
+    border: 0px;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+#password-input {
+        border: 0px;
+        border-radius: 10px;
+        margin-left: 1em;
+    }
+
+#button-input {
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(218, 180, 46);
+    color: rgb(251, 244, 227);
+    margin-bottom: 1em;
 }
 
 ul {
@@ -153,7 +176,7 @@ button.submitbtn {
   }
 
   .logo {
-    height: 70%;
+    height: 30vh;
   }
 
   .justify {
@@ -192,23 +215,6 @@ button.submitbtn {
 
   @media screen and (max-width: 780px) {
 
-    .results {
-        max-width: 300px;
-        margin-bottom: 2em;
-    }
-   
-  }
-
-  .labelspan {
-    margin: 5px;
-  }
-
-  .emotions {
-    max-width: 50%;
-  }
-
-  @media screen and (max-width: 780px) {
-
     body {
         max-width: 760px;
         background: rgb(52,7,80);
@@ -218,14 +224,17 @@ button.submitbtn {
     }
 
     .jumbotron {
-        max-width: 10vw;
-        margin: 0 auto
+        margin: 0 auto;
+        padding-top: 10em;
     }
 
-    
+    footer {
+        display: none;
+    }
 
     .logo {
-        max-height: 30vh;
+        min-width: 13vw;
+        min-height: 13vh;
     }
 
     .results {
@@ -245,12 +254,27 @@ button.submitbtn {
     max-width: 50%;
   }
 
+  .results {
+    max-width: 300px;
+    margin-bottom: 2em;
+}
+
+
+
+.labelspan {
+margin: 5px;
+}
+
+.emotions {
+max-width: 50%;
+}
 
 
 @media screen and (max-width: 480px) {
     .jumbotron {
         max-width: 400px;
         height: 10vh;
+        padding-top: 5em;
     }
 
     .d-flex {
@@ -302,5 +326,9 @@ button.submitbtn {
     max-width: 50%;
   }
 
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
  
 

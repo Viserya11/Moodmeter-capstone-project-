@@ -9,22 +9,20 @@ export default function Jumbo() {
         <Jumbotron>
         
         <div className='jumboflex'>
-          <div><h1>MoodMeter</h1>  
+          <div className='jumbotext'><h1>MoodMeter</h1>  
          <p className='justify'>
       An application to monitor your current mood and get your Big 5 test results the same time.
             </p>
+            
+            <Link to="/about">
+        <Button className='learnmore'>Learn more</Button></Link>
             </div>
             <p><img className='logo' src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/psychiatry.png" alt="logo" /></p>
             </div>
             
            
            
-    
         </Jumbotron>
-        <div className='btndiv'>
-        <Link to="/about">
-        <Button className='learnmore' bsStyle="primary">Learn more</Button></Link>
-        </div>
   </>
   )
 }

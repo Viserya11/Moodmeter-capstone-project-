@@ -9,7 +9,6 @@ export default function About() {
       <div className="aboutcontainer">
         <div className="d-flex">
           <span>
-            
             <img
               className="bigfive"
               src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/big_five.png"
@@ -17,24 +16,23 @@ export default function About() {
             />
           </span>
           <span className="justify">
-          <h5>Big 5</h5>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            distinctio optio cumque rerum praesentium voluptas. Ullam hic sequi,
-            cum assumenda tempore numquam tenetur ab, nisi commodi dolorem
-            incidunt! Quidem, eligendi!
+            <h5>Big 5</h5>
+            The Big Five test is the most widely known and scientifically
+            accepted personality assessment that measures the human personality
+            in five major dimensions: agreeableness, neuroticism, extraversion,
+            openness, and conscientiousness.
           </span>
         </div>
         <div className="d-flex">
-          
           <span className="justify">
-          <h5>Emotion track</h5>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            distinctio optio cumque rerum praesentium voluptas. Ullam hic sequi,
-            cum assumenda tempore numquam tenetur ab, nisi commodi dolorem
-            incidunt! Quidem, eligendi!
+            <h5>Emotion track</h5>
+            With this emotion tracking system, alongside getting your Big Five
+            test results you are able to detect your most dominant emotions,
+            being able to retake the test anytime you feel like. It helps
+            understanding and improving yourself as long as you do your own
+            research too.
           </span>
           <span>
-            
             <img
               className="emotions"
               src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/emotion.png"
