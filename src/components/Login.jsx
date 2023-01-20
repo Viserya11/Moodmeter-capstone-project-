@@ -29,6 +29,7 @@ function RegistrationForm({ onSubmit }) {
         <div>
           <img className="loginlogo" src="navlogo.png" alt="logo" />
         </div>
+        <p className="brandname">MoodMeter</p>
         <div>
           <div className="logincontainer">
             <h3 className="logintitle">Log in</h3>

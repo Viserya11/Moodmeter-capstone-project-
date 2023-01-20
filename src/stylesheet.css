@@ -102,6 +102,12 @@ a:hover {
   color: rgb(185, 153, 35);
 }
 
+.brandname {
+    font-weight: bold;
+    padding-top: 1em;
+    color: aliceblue;
+}
+
 #username-input {
   border: 0px;
   border-radius: 10px;
@@ -196,7 +202,7 @@ button.submitbtn {
 
 .jumboflex {
   display: flex;
-  width: 60%;
+  width: 50%;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -412,3 +418,4 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
