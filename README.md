@@ -42,4 +42,7 @@ This React and Redux-based application is a tool to monitor mental well-being us
   <br>
   And much more! :)
   
+ <p align="center"><h3>Live version available here:</h3>
+  https://moodmeter.vercel.app/<p>
+  
   <p align="center">Have fun!</p>
