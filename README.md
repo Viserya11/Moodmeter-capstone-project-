@@ -4,7 +4,7 @@ Welcome to my Capstone Project for Epicode's Front-End Developer Bootcamp!
 This React and Redux-based application is a tool to monitor mental well-being using a short 15 questions test, measuring your dominant emotion and also gives your a perspective on your Big 5 Personality traits.
 
 <img
-  src="https://i.imgur.com/2j11AbO.png"
+  src="https://i.imgur.com/RfTnsNV.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px"/>
@@ -12,7 +12,7 @@ This React and Redux-based application is a tool to monitor mental well-being us
   After logging in with any username and password you want to pick, you are redirected to the front-page of the application.
   
   <img
-  src="https://i.imgur.com/bPLpPhA.png"
+  src="https://i.imgur.com/eV85et6.png"
   alt="Alt text"
   title="Optional title"
   style="display: inline-block; margin: 0 auto; max-width: 300px"/>
