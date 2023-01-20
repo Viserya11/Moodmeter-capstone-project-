@@ -17,7 +17,7 @@ export default function Jumbo() {
             <Link to="/about">
         <Button className='learnmore'>Learn more</Button></Link>
             </div>
-            <p><img className='logo' src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/psychiatry.png" alt="logo" /></p>
+            <p className='logop'><img className='logo' src="https://raw.githubusercontent.com/Viserya11/capstone-project/master/src/psychiatry.png" alt="logo" /></p>
             </div>
             
            

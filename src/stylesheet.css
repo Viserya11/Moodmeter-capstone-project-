@@ -12,6 +12,21 @@
     padding-top: 3em;
 }
 
+.loginlogo {
+    height: 20vh;
+}
+
+.loginflex {
+    margin: 10em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.navlogo {
+    height: 3em;
+    padding-right: 0.5em;
+}
+
 footer {
     position: absolute;
     top: 15.8em;
@@ -54,6 +69,9 @@ button.btn:hover {
     background-color: rgb(185, 153, 35);
 }
 
+.logintitle {
+    margin-bottom: 1em;
+}
 
 button.btn:focus {
     background-color: rgb(185, 153, 35);
@@ -92,7 +110,11 @@ a:hover {
 
 #button-input {
     border: 0px;
+    height: 2.5em;
+    font-size: 1em;
     border-radius: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     background-color: rgb(218, 180, 46);
     color: rgb(251, 244, 227);
     margin-bottom: 1em;
@@ -203,8 +225,8 @@ button.submitbtn {
 
   .logincontainer {
     background-color:rgba(226, 226, 226, 0.9);
-    margin: 18em auto;
-    width: 30%;
+    margin: 1em auto;
+    width: 40%;
     border-radius: 25px;
     padding-left: 4em;
     padding-right: 4em;
@@ -259,7 +281,9 @@ button.submitbtn {
     margin-bottom: 2em;
 }
 
-
+.jumbotron {
+    width: 100%;
+}
 
 .labelspan {
 margin: 5px;
@@ -271,15 +295,29 @@ max-width: 50%;
 
 
 @media screen and (max-width: 480px) {
+
+
+    body {
+        background: rgb(52,7,80);
+        background: linear-gradient(45deg, rgba(52,7,80,1) 0%, rgba(57,14,81,1) 50%, rgba(17,132,101,1) 100%);
+        height: 100vh;
+    }
+
+    .logincontainer {
+        width: 350px;
+    }
+
+    .navlogo {
+        height: 1.5em;
+        padding-right: 0.5em;
+    }
+
     .jumbotron {
         max-width: 400px;
         height: 10vh;
         padding-top: 5em;
     }
 
-    .d-flex {
-        flex-direction: column;
-      }
 
     footer {
        display: none;
@@ -288,7 +326,15 @@ max-width: 50%;
 
     .jumboflex {
         flex-direction: column;
+        width: 100%;
+    }
 
+    .justify {
+        text-align: center;
+    }
+
+    .logop {
+        order: -1;
     }
 
     .logo {
@@ -320,15 +366,42 @@ max-width: 50%;
     .navbar-light .navbar-text {
         display: none;
     }
-  }
+     }
 
-  .emotions {
+     .emotions {
     max-width: 50%;
-  }
+    }
 
-  h1 {
-    font-size: 2em;
+    .learnmore {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    h6 {
+        margin-right: 2em;
+    }
+
+    h1 {
+    font-size: 3em;
     margin-bottom: 0.5em;
-  }
+    text-align: center;
+    }
+
+    #username-input {
+        margin: 0 1em;
+       max-width: 7em;
+    }
+    
+    #password-input {
+            max-width: 7em;
+            margin: 0 1em;
+        }
+
+    .loginflex {
+         padding-top: 10em;
+         margin: 0em auto;
+         display: flex;
+         flex-direction: column;
+    }
  
 

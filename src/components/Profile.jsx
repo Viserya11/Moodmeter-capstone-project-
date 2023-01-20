@@ -113,6 +113,15 @@ export default function Profile() {
     ],
   };
 
+  
+  const options = {
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+  }
+
   const data2 = {
     labels: [
       "Agreeableness",
@@ -130,6 +139,8 @@ export default function Profile() {
           resultsData.scoring.big5.neuroticism.score,
           resultsData.scoring.big5.openness.score,
         ],
+        label: [''],
+
         backgroundColor: [
           "#FF6384",
           "#36A2EB",
@@ -140,8 +151,8 @@ export default function Profile() {
         hoverBackgroundColor: [
           "#FF6384",
           "#36A2EB",
-          "#FFCE56",
-          "##43567A",
+          "#137e64",
+          "#43567A",
           "#F1CE56",
         ],
       },
@@ -157,7 +168,12 @@ export default function Profile() {
           <Container className="resultscontainer">
             <div>
               <p>
-               Congratulations! You are one step closer to understand yourself and your feelings. Below you can see your test results, showing your most dominant emotion and your Big Five Personality results. Note that the results can depend on which way you took it: based on your current mindset and feelings or you gave a general overwiew of yourself.
+                Congratulations! You are one step closer to understand yourself
+                and your feelings. Below you can see your test results, showing
+                your most dominant emotion and your Big Five Personality
+                results. Note that the results can depend on which way you took
+                it: based on your current mindset and feelings or you gave a
+                general overwiew of yourself.
               </p>
 
               <div className="resultflex">
@@ -168,7 +184,7 @@ export default function Profile() {
 
                 <div className="results">
                   <h5>Big 5 analysis</h5>
-                  <Bar data={data2} />
+                  <Bar data={data2} options={options}/>
                 </div>
               </div>
             </div>

@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
@@ -12,6 +11,7 @@ function Navigation() {
   return (
     <Navbar className={location.pathname === "/login" ? "d-none":""}>
       <Container>
+      <img className='navlogo' src='navlogo.png'/> 
       <Navbar.Brand><Link to="/">MoodMeter</Link></Navbar.Brand>
         <Navbar.Toggle />
         <Nav.Link><Link to="/about">About</Link></Nav.Link>
