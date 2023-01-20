@@ -10,8 +10,8 @@ const initialState = {
 const questionsReducer = (state = initialState, action) => {
   console.log(state);
   switch (action.type) {
-    case SAVE_USER: 
-      return {...state, user: action.payload};
+    case SAVE_USER:
+      return { ...state, user: action.payload };
     case SUBMIT_RESULTS:
       return { ...state, emotionsScore: action.payload };
     case FETCH_QUESTIONS:

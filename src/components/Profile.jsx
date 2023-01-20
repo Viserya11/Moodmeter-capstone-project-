@@ -113,14 +113,13 @@ export default function Profile() {
     ],
   };
 
-  
   const options = {
     plugins: {
       legend: {
         display: false,
       },
     },
-  }
+  };
 
   const data2 = {
     labels: [
@@ -139,7 +138,7 @@ export default function Profile() {
           resultsData.scoring.big5.neuroticism.score,
           resultsData.scoring.big5.openness.score,
         ],
-        label: [''],
+        label: [""],
 
         backgroundColor: [
           "#FF6384",
@@ -184,7 +183,7 @@ export default function Profile() {
 
                 <div className="results">
                   <h5>Big 5 analysis</h5>
-                  <Bar data={data2} options={options}/>
+                  <Bar data={data2} options={options} />
                 </div>
               </div>
             </div>

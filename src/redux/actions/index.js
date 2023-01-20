@@ -1,6 +1,6 @@
 export const FETCH_QUESTIONS = "FETCH_QUESTIONS";
 export const SUBMIT_RESULTS = "SUBMIT_RESULTS";
-export const SAVE_USER = "SAVE_USER"
+export const SAVE_USER = "SAVE_USER";
 
 export const saveUserAction = (user) => {
   return {

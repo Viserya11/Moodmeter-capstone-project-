@@ -1,407 +1,414 @@
 .jumbotron {
-    color: rgba(226, 226, 226, 0.9);
-    height: 19.5vh;
-    background-color:transparent;
-    width: 70%;
-    margin: 5em auto;
-    padding: 0rem;
-    border-radius: 25px;
+  color: rgba(226, 226, 226, 0.9);
+  height: 19.5vh;
+  background-color: transparent;
+  width: 70%;
+  margin: 5em auto;
+  padding: 0rem;
+  border-radius: 25px;
 }
 
 .jumbotext {
-    padding-top: 3em;
+  padding-top: 3em;
 }
 
 .loginlogo {
-    height: 20vh;
+  height: 20vh;
 }
 
 .loginflex {
-    margin: 10em auto;
-    display: flex;
-    flex-direction: column;
+  margin: 10em auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .navlogo {
-    height: 3em;
-    padding-right: 0.5em;
+  height: 3em;
+  padding-right: 0.5em;
 }
 
 footer {
-    position: absolute;
-    top: 15.8em;
-    opacity: 0.25;
-    width: 100%;
-    z-index: -1;
-    height: 70vh;
-    background-image: url("./assets/waves.svg");
+  position: absolute;
+  top: 15.8em;
+  opacity: 0.25;
+  width: 100%;
+  z-index: -1;
+  height: 70vh;
+  background-image: url("./assets/waves.svg");
 }
 
 body {
-    background: rgb(52,7,80);
-    background: linear-gradient(90deg, rgba(52,7,80,1) 0%, rgba(57,14,81,1) 50%, rgba(17,132,101,1) 100%);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 100%;
+  background: rgb(52, 7, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(52, 7, 80, 1) 0%,
+    rgba(57, 14, 81, 1) 50%,
+    rgba(17, 132, 101, 1) 100%
+  );
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
 }
 
 .navbar-light .navbar-brand {
-    color: aliceblue;
+  color: aliceblue;
 }
 
-.navbar-light .navbar-text{
-    color: aliceblue;
+.navbar-light .navbar-text {
+  color: aliceblue;
 }
 
 .navbar-light .navbar-text a {
-    color: rgb(218, 180, 40);
+  color: rgb(218, 180, 40);
 }
 
 button.btn {
-    position: relative;
-    background-color: rgb(218, 180, 40);
-    border: none;
-    border-radius: 25px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  position: relative;
+  background-color: rgb(218, 180, 40);
+  border: none;
+  border-radius: 25px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 button.btn:hover {
-    background-color: rgb(185, 153, 35);
+  background-color: rgb(185, 153, 35);
 }
 
 .logintitle {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 button.btn:focus {
-    background-color: rgb(185, 153, 35);
-    border: none;
-    border-radius: 25px;
+  background-color: rgb(185, 153, 35);
+  border: none;
+  border-radius: 25px;
 }
 
 a.nav-link {
-    color: #c79d42
+  color: #c79d42;
 }
 
 a.nav-link:hover {
-    color: #b3892e;
+  color: #b3892e;
 }
 
 a {
-    color: rgb(251, 244, 227);
-    transition: ease 0.5s;
+  color: rgb(251, 244, 227);
+  transition: ease 0.5s;
 }
 
 a:hover {
-    color: rgb(185, 153, 35);
+  color: rgb(185, 153, 35);
 }
 
 #username-input {
-    border: 0px;
-    border-radius: 10px;
-    margin-left: 1em;
+  border: 0px;
+  border-radius: 10px;
+  margin-left: 1em;
 }
 
 #password-input {
-        border: 0px;
-        border-radius: 10px;
-        margin-left: 1em;
-    }
+  border: 0px;
+  border-radius: 10px;
+  margin-left: 1em;
+}
 
 #button-input {
-    border: 0px;
-    height: 2.5em;
-    font-size: 1em;
-    border-radius: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    background-color: rgb(218, 180, 46);
-    color: rgb(251, 244, 227);
-    margin-bottom: 1em;
+  border: 0px;
+  height: 2.5em;
+  font-size: 1em;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: rgb(218, 180, 46);
+  color: rgb(251, 244, 227);
+  margin-bottom: 1em;
 }
 
 ul {
-    list-style-type:none;
+  list-style-type: none;
 }
 
 h1 {
-    margin-top: 0;
-    margin-bottom: 2rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
-
 .testcontainer {
-    background-color:rgba(226, 226, 226, 0.9);
-    border-radius: 25px;
-    padding-top: 1em;
+  background-color: rgba(226, 226, 226, 0.9);
+  border-radius: 25px;
+  padding-top: 1em;
 }
 
 .aboutcontainer {
-    margin: 0 auto;
-    background-color:rgba(226, 226, 226, 0.9);
-    border-radius: 25px;
-    padding-top: 1em;
-    width: 80%;
-    padding: 2em;
+  margin: 0 auto;
+  background-color: rgba(226, 226, 226, 0.9);
+  border-radius: 25px;
+  padding-top: 1em;
+  width: 80%;
+  padding: 2em;
 }
 
 .d-flex {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1em;
-    gap: 0.5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  gap: 0.5em;
 }
 
 .bigfive {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h2 {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 button.submitbtn {
-    width: 7em;
-    margin-top: 0;
+  width: 7em;
+  margin-top: 0;
 }
 
 .resultscontainer {
-    background-color:rgba(226, 226, 226, 0.9);
-    border-radius: 25px;
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top: 2em;
-    text-align: justify;
+  background-color: rgba(226, 226, 226, 0.9);
+  border-radius: 25px;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 2em;
+  text-align: justify;
 }
 
 .results {
-    max-width: 300px;
-    margin-bottom: 2em;
+  max-width: 300px;
+  margin-bottom: 2em;
 }
 
-
 .resultflex {
-    margin-top: 1em;
-    display: flex;
-    justify-content: center;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.jumboflex {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 30vh;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.learnmore {
+  z-index: 99999;
+}
+
+.btndiv {
+  transform: translateY(20em);
+  overflow: hidden;
+  z-index: 99999;
+}
+
+h5 {
+  text-align: center;
+}
+
+.emotions {
+  width: 30%;
+}
+
+.logincontainer {
+  background-color: rgba(226, 226, 226, 0.9);
+  margin: 1em auto;
+  width: 40%;
+  border-radius: 25px;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    max-width: 760px;
+    background: rgb(52, 7, 80);
+    background: linear-gradient(
+      90deg,
+      rgba(52, 7, 80, 1) 0%,
+      rgba(57, 14, 81, 1) 50%,
+      rgba(17, 132, 101, 1) 100%
+    );
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    width: 100%;
   }
 
-  .jumboflex {
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
+  .jumbotron {
     margin: 0 auto;
+    padding-top: 10em;
+  }
+
+  footer {
+    display: none;
   }
 
   .logo {
-    height: 30vh;
+    min-width: 13vw;
+    min-height: 13vh;
   }
 
-  .justify {
-    text-align: justify;
+  .results {
+    max-width: 200px;
+    margin-bottom: 2em;
   }
 
-  .learnmore {
-    z-index: 99999;
+  footer {
+    position: absolute;
+    top: 40.5em;
+    width: 100%;
+    z-index: -1;
   }
+}
 
-  .btndiv {
-    transform: translateY(20em);
-    overflow: hidden;
-    z-index: 99999;
-  }
+.emotions {
+  max-width: 50%;
+}
 
-  h5 {
-    text-align: center;
-  }
+.results {
+  max-width: 300px;
+  margin-bottom: 2em;
+}
 
-  .emotions {
-    width: 30%;
+.jumbotron {
+  width: 100%;
+}
+
+.labelspan {
+  margin: 5px;
+}
+
+.emotions {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: rgb(52, 7, 80);
+    background: linear-gradient(
+      45deg,
+      rgba(52, 7, 80, 1) 0%,
+      rgba(57, 14, 81, 1) 50%,
+      rgba(17, 132, 101, 1) 100%
+    );
+    height: 100vh;
   }
 
   .logincontainer {
-    background-color:rgba(226, 226, 226, 0.9);
-    margin: 1em auto;
-    width: 40%;
-    border-radius: 25px;
-    padding-left: 4em;
-    padding-right: 4em;
-    padding-top: 2em;
+    width: 350px;
+  }
+
+  .navlogo {
+    height: 1.5em;
+    padding-right: 0.5em;
+  }
+
+  .jumbotron {
+    max-width: 400px;
+    height: 10vh;
+    padding-top: 5em;
+  }
+
+  footer {
+    display: none;
+    height: 0;
+  }
+
+  .jumboflex {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .justify {
     text-align: center;
-
   }
 
-  @media screen and (max-width: 780px) {
-
-    body {
-        max-width: 760px;
-        background: rgb(52,7,80);
-        background: linear-gradient(90deg, rgba(52,7,80,1) 0%, rgba(57,14,81,1) 50%, rgba(17,132,101,1) 100%);
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        width: 100%; 
-    }
-
-    .jumbotron {
-        margin: 0 auto;
-        padding-top: 10em;
-    }
-
-    footer {
-        display: none;
-    }
-
-    .logo {
-        min-width: 13vw;
-        min-height: 13vh;
-    }
-
-    .results {
-        max-width: 200px;
-        margin-bottom: 2em;
-    }
-
-    footer {
-        position: absolute;
-        top: 40.5em;
-        width: 100%;
-    z-index: -1;
-   }
+  .logop {
+    order: -1;
   }
 
-  .emotions {
-    max-width: 50%;
+  .logo {
+    height: 20vh;
+    margin: 1em;
+  }
+
+  .learnmore {
+    position: relative;
+    top: 1em;
   }
 
   .results {
     max-width: 300px;
     margin-bottom: 2em;
-}
+  }
 
-.jumbotron {
-    width: 100%;
-}
+  .resultflex {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-.labelspan {
-margin: 5px;
+  div.container {
+    max-width: 380px;
+  }
+
+  .navbar-light .navbar-text {
+    display: none;
+  }
 }
 
 .emotions {
-max-width: 50%;
+  max-width: 50%;
 }
 
+.learnmore {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
-@media screen and (max-width: 480px) {
+h6 {
+  margin-right: 2em;
+}
 
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
 
-    body {
-        background: rgb(52,7,80);
-        background: linear-gradient(45deg, rgba(52,7,80,1) 0%, rgba(57,14,81,1) 50%, rgba(17,132,101,1) 100%);
-        height: 100vh;
-    }
+#username-input {
+  margin: 0 1em;
+  max-width: 7em;
+}
 
-    .logincontainer {
-        width: 350px;
-    }
+#password-input {
+  max-width: 7em;
+  margin: 0 1em;
+}
 
-    .navlogo {
-        height: 1.5em;
-        padding-right: 0.5em;
-    }
-
-    .jumbotron {
-        max-width: 400px;
-        height: 10vh;
-        padding-top: 5em;
-    }
-
-
-    footer {
-       display: none;
-       height: 0;
-    }
-
-    .jumboflex {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .justify {
-        text-align: center;
-    }
-
-    .logop {
-        order: -1;
-    }
-
-    .logo {
-        height: 20vh;
-        margin: 1em;
-    }
-
-    .learnmore {
-        position: relative;
-        top: 1em;
-    }
-
-    .results {
-        max-width: 300px;
-        margin-bottom: 2em;
-    }
-
-    .resultflex {
-        margin-top: 1em;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      }
-
-    div.container {
-        max-width: 380px;
-    }
-
-    .navbar-light .navbar-text {
-        display: none;
-    }
-     }
-
-     .emotions {
-    max-width: 50%;
-    }
-
-    .learnmore {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    h6 {
-        margin-right: 2em;
-    }
-
-    h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    text-align: center;
-    }
-
-    #username-input {
-        margin: 0 1em;
-       max-width: 7em;
-    }
-    
-    #password-input {
-            max-width: 7em;
-            margin: 0 1em;
-        }
-
-    .loginflex {
-         padding-top: 10em;
-         margin: 0em auto;
-         display: flex;
-         flex-direction: column;
-    }
- 
-
+.loginflex {
+  padding-top: 10em;
+  margin: 0em auto;
+  display: flex;
+  flex-direction: column;
+}
